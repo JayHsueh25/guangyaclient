@@ -566,7 +566,7 @@ class GuangyaClient:
         if need_play_record:
             data["needPlayRecord"] = True
         return self.request(
-            "https://api.guangyapan.com/nd.bizuserres.s/v1/file/fs_files",
+            "https://api.guangyapan.com/userres/v1/file/get_file_list",
             method="POST",
             json=data,
         ).json()
